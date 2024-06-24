@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - Merhaba Dünya Programı</h1>
+Çıkış ekranına (konsol) "Merhaba Dünya" yazılması, Java ve diğer programlama dillerindeki ilk programdır. Bu eğitim size Java programlamada ilk programınızı ("Merhaba Dünya" programını yazdır) nasıl yazabileceğinizi öğretecektir.
+<br><br>
+
+<hr>
+<h2>"Merhaba Dünya" yazdıran Java programı</h2>
+"Merhaba Dünya" yazısını yazdıracak Java programı aşağıda verilmiştir:
+<br><br>
+<code>
+<pre>
+public class MyFirstJavaProgram {
+
+   /* Bu benim ilk Java programım.
+    * Bu, çıktı olarak 'Merhaba, Dünya!' yazacaktır.
+    */
+
+   public static void main(String []args) {
+
+      System.out.println("Merhaba, Dünya!"); // Çıktı: Merhaba, Dünya!
+   }
+}
+</pre>
+</code>
+<br>
+
+<hr>
+<h4>Merhaba Dünya Programını Yazma, Kaydetme ve Çalıştırma Adımları</h4>
+Dosyanın nasıl kaydedileceğine, derleneceğine ve programın nasıl çalıştırılacağına bakalım. Lütfen sonraki adımları izleyin.
+<br><br>
+Not defterini açın ve yukarıdaki kodu olduğu gibi ekleyin.
+<br><br>
+Dosyayı - <code>MyFirstJavaProgram.java</code> olarak kaydedin .
+<br><br>
+Bir komut istemi penceresi açın (<code>cmd</code>) ve sınıfı kaydettiğiniz dizine gidin. C:\ olduğunu varsayalım.
+<br><br>
+<code>javac MyFirstJavaProgram.java</code> yazın ve kodunuzu derlemek için enter tuşuna basın.
+<br><br>
+Kodunuzda herhangi bir hata yoksa komut istemi sizi bir sonraki satıra yönlendirecektir.
+<br><br>
+Şimdi programınızı çalıştırmak için <code>java MyFirstJavaProgram</code> yazın.
+<br><br>
+Ekranda "Merhaba Dünya" yazısını görebileceksiniz.
+<br><br>
+Yol değişkeni ayarlanmaq için bir sonraki <strong>Java Ortam Kurulumunu</strong> inceleyein.
+<br><br>
+
+<hr>
+<h2>Merhaba Dünya Programının Açıklaması</h2>
+Merhaba Dünya'yı çıkış ekranına başarıyla yazdırdığımız için. Kodu satır satır anlayalım.
+<br><br>
+
+<h4>1. Public Main Class</h4>
+<code>public class MyFirstJavaProgram {</code>
+<br>
+Bu satır yeni bir MyFirstJavaProgram sınıfı oluşturuyor ve herkese açık olduğundan, bu sınıf MyFirstJavaProgram.java ile aynı isim dosyasında tanımlanmalıdır. Bu kural, Java derleyicisinin dosya içeriğini okumadan önce oluşturulacak genel sınıfın adını belirlemesine yardımcı olur.
+<br><br>
+
+<h4>2. Comment Section</h4>
+<code>
+<pre>
+/* Bu benim ilk Java programım.
+* Bu, çıktı olarak 'Merhaba, Dünya!' yazacaktır.
+*/
+</pre>
+</code>
+/* */ bloğundaki bu satırlar Java derleyicisi tarafından dikkate alınmaz ve yorumlardır . Yorum, programın daha iyi anlaşılmasına yardımcı olur ve kodun okunabilir ve anlaşılır olmasını sağlar.
+<br><br>
+
+<h4>3. Public Static Void Main</h4>
+<code>public static void main(String []args) {</code>
+<br>
+Bu satır, bu program belleğe yüklendiğinde JVM'nin çağırdığı ana yöntemi temsil eder. Bu yöntem programı çalıştırmak için kullanılır. Bu yöntem tamamlandıktan sonra program tek iş parçacıklı ortamda sonlandırılır.
+<br><br>
+
+<h4>4. Kullanılan Anahtar Kelimeler</h4>
+Bu satırdaki her anahtar kelimenin amacını kontrol edelim.
+<br><br>
+<strong>public</strong> – ana yöntemin kapsamını tanımlar. Herkese açık olduğundan bu yöntem JVM gibi harici programlar tarafından çağrılabilir.
+<br><br>
+<strong>static</strong> – ana yöntemin durumunu tanımlar. Statik olan bu yöntem, önce sınıfın nesnesini oluşturmadan JVM gibi harici bir program tarafından çağrılabilir.
+<br><br>
+<strong>void</strong> – ana yöntemin dönüş türünü tanımlar. Bu yöntem geçersiz olduğundan herhangi bir değer döndürmez.
+<br><br>
+<strong>main</strong> - yöntemin (<strong>method</strong>) adı
+<br><br>
+<strong>String []args</strong> – java komutu yürütülürken komut satırında iletilen argümanlar.
+<br><br>
+
+<h4>5. System.out.println() Yöntemi (Method)</h4>
+<code>System.out.println("Merhaba, Dünya!"); // Çıktı: Merhaba, Dünya!</code>
+<br>
+<strong>System.out</strong> birincil konsolu temsil eder ve <strong>println()</strong> yöntemi girdi olarak "Merhaba Dünya"yı alır ve aynısını konsol çıktısına yazdırır.
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

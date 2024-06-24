@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - Temel Sözdizimi (Basic Syntax)</h1>
+Bir Java programını ele aldığımızda, birbirlerinin yöntemlerini çağırarak iletişim kuran nesnelerin topluluğu olarak tanımlanabilir. Şimdi kısaca sınıf, nesne, yöntem ve örnek değişkenlerin ne anlama geldiğine bakalım.
+<br><br>
+
+<strong>Nesne (Object)</strong> – Nesnelerin durumları ve davranışları vardır. Örnek: Bir köpeğin renk, isim, cins gibi halleri ve ayrıca kuyruğunu sallama, havlama, yemek yeme gibi davranışları vardır. Bir nesne bir sınıfın örneğidir.
+<br><br>
+<strong>Sınıf (Class)</strong> – Bir sınıf, kendi türündeki nesnenin desteklediği davranışı/durumu tanımlayan bir şablon/plan olarak tanımlanabilir.
+<br><br>
+<strong>Yöntemler (Methods)</strong> - Bir yöntem temel olarak bir davranıştır. Bir sınıf birçok yöntem içerebilir. Mantıkların yazıldığı, verilerin değiştirildiği ve tüm eylemlerin yürütüldüğü yöntemlerdedir.
+<br><br>
+<strong>Örnek Değişkenleri (Instance Variables)</strong> – Her nesnenin kendine özgü örnek değişkenleri kümesi vardır. Bir nesnenin durumu, bu örnek değişkenlere atanan değerler tarafından oluşturulur.
+<br><br>
+
+<hr>
+<h2>Temel Söz Dizimi (Basic Syntax)</h2>
+
+<strong>Büyük/Küçük Harfe Duyarlılık</strong> - Java büyük/küçük harfe duyarlıdır; bu, Merhaba ve merhaba tanımlayıcılarının Java'da farklı anlamlara sahip olacağı anlamına gelir.
+<br><br>
+<strong>Sınıf Adları</strong> - Tüm sınıf adlarında ilk harf Büyük Harf olmalıdır. Sınıfın adını oluşturmak için birden fazla kelime kullanılıyorsa, her iç kelimenin ilk harfi Büyük Harf olmalıdır.
+<br><br>
+<strong>Örnek</strong> - sınıf (<strong><code>class</code></strong>) MyFirstJavaClass
+<br><br>
+<strong>Yöntem Adları</strong> - Tüm yöntem adları Küçük harfle başlamalıdır. Yöntemin adını oluşturmak için birden fazla kelime kullanılıyorsa, her iç kelimenin ilk harfi Büyük Harf olmalıdır.
+<br><br>
+<strong>Örnek</strong> – <strong><code>public void myMethodName()</code></strong>
+<br><br>
+<strong>Program Dosyası Adı</strong> – Program dosyasının adı sınıf adıyla tam olarak eşleşmelidir.
+<br><br>
+Dosyayı kaydederken, sınıf adını kullanarak kaydetmeli (Java'nın büyük/küçük harfe duyarlı olduğunu unutmayın) ve adın sonuna <strong><code>.java</code></strong> eklemelisiniz (<strong>dosya adı ile sınıf adı eşleşmiyorsa programınız derlenmez</strong>).
+<br><br>
+Ancak, dosyada genel bir sınıfınızın bulunmaması durumunda dosya adının sınıf adından farklı olabileceğini lütfen unutmayın. Ayrıca dosyada public bir sınıfın bulunması zorunlu değildir.
+<br><br>
+<strong>Örnek</strong> – 'MyFirstJavaProgram'ın sınıf (<strong><code>class</code></strong>) adı olduğunu varsayalım. Daha sonra dosya <strong><code>MyFirstJavaProgram.java</code></strong> olarak kaydedilmelidir.
+<br><br>
+<strong>public static void main(String args[])</strong> – Java programı işleme, her Java programının zorunlu bir parçası olan <strong><code>main()</code></strong> yönteminden başlar.
+<br><br>
+
+<hr>
+<h2>Java Tanımlayıcıları (Java Identifiers)</h2>
+Tüm Java bileşenleri ad gerektirir. Sınıflar, değişkenler ve yöntemler için kullanılan adlara tanımlayıcılar denir .
+Java'da tanımlayıcılarla ilgili hatırlanması gereken birkaç nokta vardır. Bunlar aşağıdaki gibidir.
+<br><br>
+Tüm tanımlayıcılar bir harfle (A'dan Z'ye veya a'dan z'ye), para birimi karakteriyle ($) veya alt çizgiyle (_) başlamalıdır.
+<br><br>
+İlk karakterden sonra tanımlayıcılar herhangi bir karakter kombinasyonuna sahip olabilir.
+<br><br>
+Anahtar kelime tanımlayıcı olarak kullanılamaz.
+<br><br>
+En önemlisi, tanımlayıcılar büyük/küçük harfe duyarlıdır.
+<br><br>
+Yasal tanımlayıcılara örnekler: yaş, $salary, _value, __1_value.
+<br><br>
+Yasadışı tanımlayıcılara örnekler: 123abc, -salary.
+<br><br>
+
+<hr>
+<h2>Java Değiştiricileri (Java Modifiers)</h2>
+Diğer dillerde olduğu gibi değiştiriciler kullanılarak sınıfları, yöntemleri vb. değiştirmek mümkündür. İki değiştirici kategorisi vardır –
+<br><br>
+<strong>Erişim Değiştiricileri (Access Modifiers)</strong> - default, public , protected, private
+<br><br>
+<strong>Erişimsiz Değiştiriciler (Non-access Modifiers)</strong> - final, abstract, strictfp
+<br><br>
+
+<hr>
+<h2>Java Değişkenleri</h2>
+Java'daki değişken türleri aşağıdadır.
+<br><br>
+<strong>Yerel Değişkenler (Local Variables)</strong>
+<br><br>
+<strong>Sınıf Değişkenleri (Statik Değişkenler) (Class Variables (Static Variables))</strong>
+<br><br>
+<strong>Örnek Değişkenleri (Statik Olmayan Değişkenler) (Instance Variables (Non-static Variables))</strong>
+<br><br>
+
+<hr>
+<h2>Java Dizileri (Arrays)</h2>
+Diziler aynı türden birden fazla değişkeni saklayan nesnelerdir. Ancak dizinin kendisi yığındaki bir nesnedir. Gelecek bölümlerde nasıl deklare edileceğini, oluşturulacağını ve başlatılacağını inceleyeceğiz.
+<br><br>
+
+<hr>
+<h2>Java Numaralandırmaları, sıralamaları (Enums)</h2>
+Numaralandırmalar Java 5.0'da tanıtıldı. Numaralandırmalar, bir değişkeni yalnızca birkaç önceden tanımlanmış değerden birine sahip olacak şekilde kısıtlar. Bu numaralandırılmış listedeki değerlere numaralandırma denir.
+<br><br>
+Numaralandırmaların kullanımıyla kodunuzdaki hata sayısını azaltmak mümkündür.
+<br><br>
+Örneğin bir taze meyve suyu mağazası için başvuru yaparsak bardak boyutunu küçük, orta ve büyük olarak sınırlamak mümkün olacaktır. Bu, kimsenin küçük, orta veya büyük beden dışında herhangi bir beden sipariş etmesine izin vermeyeceğinden emin olacaktır.
+<br><br>
+<code>
+<pre>
+class FreshJuice {
+
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   FreshJuiceSize size;
+}
+
+public class FreshJuiceTest {
+
+   public static void main(String args[]) {
+
+      FreshJuice juice = new FreshJuice();
+      juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;
+
+      System.out.println("Size: " + juice.size);
+   }
+}
+</pre>
+</code>
+<br>
+<strong>Not</strong> – Numaralandırmalar kendilerine ait olarak veya bir sınıf içinde bildirilebilir. Yöntemler, değişkenler, yapıcılar numaralandırmaların içinde de tanımlanabilir.
+<br><br>
+
+<hr>
+<h2>Java Anahtar Kelimeleri (Keywords)</h2>
+Aşağıdaki liste Java'da ayrılmış kelimeleri göstermektedir. Bu ayrılmış kelimeler sabit, değişken veya başka bir tanımlayıcı ad olarak kullanılamaz.
+<br><br>
+1 <strong>abstract</strong> - Sözlüğe göre soyutlama, olaylardan ziyade fikirleri ele almanın niteliğidir.
+<br><br>
+
+2 <strong>assert</strong> - Assert anahtar sözcüğü Java'da iddiayı tanımlamak için kullanılır. Bir iddia, Java'da, programda yapılan herhangi bir varsayımın doğruluğunu garanti eden bir ifadedir.
+<br><br>
+
+3 <strong>boolean</strong> - boolean veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir. Bir boole değerini doğru veya yanlış olarak kabul edebilen boole tipi değişkenler oluşturmanın yollarını sağlar.
+<br><br>
+
+4 <strong>break</strong> - Java programlama dilinde break ifadesi aşağıdaki iki kullanıma sahiptir. Bir döngü içinde break deyimiyle karşılaşıldığında, döngü hemen sonlandırılır ve program kontrolü, döngüyü takip eden bir sonraki deyimden devam eder. Switch ifadesindeki bir durumu sonlandırmak için kullanılabilir.
+<br><br>
+
+5 <strong>byte</strong> - bayt veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir. Bir bayt değerini kabul edebilen bayt tipi değişkenler oluşturmanın yollarını sağlar.
+<br><br>
+
+6 <strong>case</strong> - case anahtar sözcüğü, bir değişkenin bir değerler listesine göre eşitlik açısından test edilmesine olanak tanıyan switch ifadesinin bir parçasıdır.
+<br><br>
+
+7 <strong>catch</strong> - İstisna (veya istisnai olay), bir programın yürütülmesi sırasında ortaya çıkan bir sorundur.
+<br><br>
+
+8 <strong>char</strong> - char veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir.
+<br><br>
+
+9 <strong>class</strong> - Java Nesneye Yönelik Bir Dildir. Nesneye Dayalı özelliğe sahip bir dil olarak.
+<br><br>
+
+10 <strong>const</strong> - final anahtar sözcüğü, Java'da sabit değeri veya son yöntemleri/sınıfları tanımlamak için kullanılır.
+<br><br>
+
+11 <strong>continue</strong> - Continue anahtar sözcüğü herhangi bir döngü kontrol yapısında kullanılabilir.
+<br><br>
+
+12 <strong>default</strong> - default anahtar sözcüğü, bir değişkenin bir değerler listesine göre eşitlik açısından test edilmesine olanak tanıyan switch ifadesinin bir parçasıdır.
+<br><br>
+
+13 <strong>do</strong> - Bir do...while döngüsü while döngüsüne benzer, tek farkı do...while döngüsünün en az bir kez yürütülmesinin garanti edilmesidir.
+<br><br>
+
+14 <strong>double</strong> - double veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir.
+<br><br>
+
+15 <strong>if</strong> - Bir if ifadesinin ardından, Boolean ifadesi yanlış olduğunda çalıştırılan isteğe bağlı bir else ifadesi gelebilir.
+<br><br>
+
+16 <strong>enum</strong> - Java Enum sınıfı, tüm Java dili numaralandırma türlerinin ortak temel sınıfıdır.
+<br><br>
+
+17 <strong>extends</strong> - extends, bir sınıfın özelliklerini miras almak için kullanılan anahtar kelimedir. Extends anahtar sözcüğünün sözdizimi aşağıdadır.
+<br><br>
+
+18 <strong>final</strong> - final anahtar sözcüğü, Java'da sabit değeri veya son yöntemleri/sınıfları tanımlamak için kullanılır.
+<br><br>
+
+19 <strong>finally</strong> - Nihayet anahtar kelimesi bir nihayet bloğunu tanımlamak için kullanılır. Nihayet bloğu bir try bloğunu veya bir catch bloğunu takip eder. Son olarak bir kod bloğu, bir İstisnanın ortaya çıkmasına bakılmaksızın her zaman yürütülür.
+<br><br>
+
+20 <strong>float</strong> - float veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir. Bir kayan nokta değerini kabul edebilen kayan nokta türü değişkenler oluşturmanın yollarını sağlar.
+<br><br>
+
+21 for</strong> - For döngüsü, belirli sayıda yürütülmesi gereken bir döngüyü verimli bir şekilde yazmanıza olanak tanıyan bir tekrarlama kontrol yapısıdır.
+<br><br>
+
+22 <strong>goto</strong> - goto ifadesi şu anda Java tarafından desteklenmiyor. Gelecek için ayrılmış bir anahtar kelime olarak tutulur. Alternatif olarak Java, break ve Continue ifadelerini içeren etiketleri destekler.
+<br><br>
+
+23 <strong>if</strong> - Bir if ifadesi, bir Boole ifadesinin ardından gelen bir veya daha fazla ifadeden oluşur.
+<br><br>
+
+24 <strong>implements</strong> - Genellikle, apps anahtar sözcüğü, bir arayüzün özelliklerini miras almak için sınıflarla birlikte kullanılır.
+<br><br>
+
+25 <strong>import</strong> - içe aktarma klavyesi paketlerin bağlamında kullanılır.
+<br><br>
+
+26 <strong>instanceof</strong> - Instanceof anahtar sözcüğü yalnızca nesne referans değişkenleri için kullanılan bir operatördür.
+<br><br>
+
+27 <strong>int</strong> - int veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir.
+<br><br>
+
+28 <strong>interface</strong> - Arayüz Java'da bir referans türüdür. Sınıfa benzer. Soyut yöntemlerin bir koleksiyonudur.
+<br><br>
+
+29 <strong>long</strong> - long veri türü, Java tarafından desteklenen sekiz temel veri türünden biridir.
+<br><br>
+
+30 <strong>native</strong>
+<br><br>
+
+31 <strong>new</strong>
+<br><br>
+
+32 <strong>package</strong> - Paketler Java'da adlandırma çakışmalarını önlemek, erişimi kontrol etmek, sınıfların, arayüzlerin, numaralandırmaların ve ek açıklamaların aranmasını/bulunmasını ve kullanımını kolaylaştırmak vb. için kullanılır.
+<br><br>
+
+33 <strong>private</strong> - Özel olarak bildirilen yöntemlere, değişkenlere ve yapıcılara yalnızca bildirilen sınıfın içinden erişilebilir.
+<br><br>
+
+34 <strong>protected</strong> - Korumalı erişim değiştiricisi sınıflara ve arayüzlere uygulanamaz.
+<br><br>
+
+35 <strong>public</strong> - Bir sınıf, yöntem, yapıcı, arayüz vb. public olarak ilan edilen sınıfa herhangi bir sınıftan erişilebilir.
+<br><br>
+
+36 <strong>return</strong>
+<br><br>
+
+37 <strong>short</strong> - Değişkenlere farklı veri türleri atayarak bu değişkenlerde tam sayıları, ondalık sayıları veya karakterleri saklayabilirsiniz.
+<br><br>
+
+38 <strong>static</strong> - Statik anahtar kelime, sınıf için oluşturulan örneklerden bağımsız olarak var olacak değişkenler oluşturmak için kullanılır.
+<br><br>
+
+39 <strong>strictfp</strong>
+<br><br>
+
+40 <strong>super</strong> - Süper anahtar kelime bu anahtar kelimeye benzer.
+<br><br>
+
+41 <strong>switch</strong> - Switch ifadesi, bir değişkenin bir değerler listesine göre eşitlik açısından test edilmesine olanak tanır.
+<br><br>
+
+42 <strong>synchronized</strong>
+<br><br>
+
+43 <strong>this</strong> - bu anahtar kelime bir nesneyi tanımlamak için çok önemli bir anahtar kelimedir. Aşağıda bu anahtar kelimenin kullanımı verilmiştir.
+<br><br>
+
+44 <strong>throw</strong> - Bir yöntem kontrol edilen bir istisnayı işleyemiyorsa, yöntemin throws anahtar sözcüğünü kullanarak bunu bildirmesi gerekir.
+<br><br>
+
+45 <strong>transient</strong> - Serileştirme, bir nesnenin durumunu bir bayt akışına yazabildiğimiz ve böylece onu ağ üzerinden aktarabildiğimiz bir kavramdır (JPA ve RMI gibi teknolojileri kullanarak).
+<br><br>
+
+46 <strong>try</strong> - Bir yöntem, try ve catch anahtar kelimelerinin bir kombinasyonunu kullanarak bir istisnayı yakalar.
+<br><br>
+
+47 <strong>void</strong>
+<br><br>
+
+48 <strong>volatile</strong>
+<br><br>
+
+49 <strong>while</strong> - Java programlama dilindeki while döngüsü ifadesi, belirli bir koşul doğru olduğu sürece bir hedef ifadesini tekrar tekrar yürütür.
+<br><br>
+
+<hr>
+<h2>Java'daki yorumlar</h2>
+Java, C ve C++'a çok benzer şekilde tek satırlı ve çok satırlı yorumları destekler. Herhangi bir yorumun içinde bulunan tüm karakterler Java derleyicisi tarafından göz ardı edilir.
+<br><br>
+<code>
+<pre>
+public class MyFirstJavaProgram {
+
+   /* Bu benim ilk Java programım.
+    * Bu, çıktı olarak 'Merhaba Dünya'yı yazdıracaktır
+    * Bu çok satırlı yorumların bir örneğidir.
+    */
+
+   public static void main(String []args) {
+      // Bu tek satırlık yoruma bir örnektir
+       /* Bu aynı zamanda tek satırlık yorum örneğidir. */
+
+      System.out.println("Merhaba Dünya");
+   }
+}
+</pre>
+</code>
+<br>
+
+<hr>
+<h2>Boş Satırları Kullanma</h2>
+Muhtemelen bir açıklama içeren, yalnızca beyaz boşluk içeren bir satır boş satır olarak bilinir ve Java bunu tamamen yok sayar.
+<br><br>
+
+<hr>
+<h2>Miras (Inheritance)</h2>
+Java'da sınıflar sınıflardan türetilebilir. Temel olarak, yeni bir sınıf oluşturmanız gerekiyorsa ve ihtiyacınız olan kodun bir kısmını içeren bir sınıf zaten varsa, o zaman yeni sınıfınızı mevcut koddan türetmeniz mümkündür.
+<br><br>
+Bu kavram, yeni bir sınıfta kodu yeniden yazmaya gerek kalmadan mevcut sınıfın alanlarını ve yöntemlerini yeniden kullanmanıza olanak tanır. Bu senaryoda, mevcut sınıfa üst sınıf , türetilmiş sınıfa ise alt sınıf adı verilir .
+
+<hr>
+<h2>Arayüzler (Interfaces)</h2>
+Java dilinde arayüz, nesnelerin birbirleriyle nasıl iletişim kuracağına ilişkin bir sözleşme olarak tanımlanabilir. Miras kavramı söz konusu olduğunda arayüzler hayati bir rol oynamaktadır.
+<br><br>
+Bir arayüz, türeyen bir sınıfın (alt sınıfın) kullanması gereken yöntemleri tanımlar. Ancak yöntemlerin uygulanması tamamen alt sınıfa bağlıdır.
+<br><br>
+
+<hr>
+<h2>Sırada ne var?</h2>
+Bir sonraki bölümde Java programlamadaki Nesneler ve sınıflar anlatılmaktadır. Oturumun sonunda Java'da nesnelerin ve sınıfların ne olduğu konusunda net bir fikir edinebileceksiniz.
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

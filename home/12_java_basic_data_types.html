@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+<div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - Veri Türleri (Data Types)</h1>
+Veri türleri, farklı değişken türleri , sabitler, yöntem parametreleri, dönüş türü vb. için verilerin türünü ve değer aralığını tanımlar. Veri türü, derleyiciye depolanacak veri türü ve gerekli bellek hakkında bilgi verir. Farklı veri türlerini depolamak ve işlemek için tüm değişkenlerin belirli veri türlerine sahip olması gerekir.
+<br><br>
+
+<hr>
+Java veri türleri iki bölüme ayrılmıştır.
+<br><br>
+İlkel Veri Türleri (Primitive Data Types)
+<br><br>
+Referans / Nesne Veri Türleri (Reference / Object Data Types)
+<br><br>
+
+<hr>
+<h2>Java İlkel Veri Türleri (Primitive Data Types)</h2>
+İlkel veri türleri dil tarafından önceden tanımlanır ve bir anahtar kelimeyle adlandırılır. Java tarafından desteklenen sekiz temel veri türü vardır. Aşağıda ilkel veri türlerinin listesi verilmiştir:
+<pre>
+byte
+short
+int
+long
+float
+double
+boolean
+char
+</pre>
+<br>
+
+<hr>
+<h2>Java byte Veri Türü</h2>
+Bayt veri türü, 8 bitlik işaretli ikinin tamamlayıcısı tamsayıdır
+<br><br>
+Minimum değer -128 (-2^7)
+<br><br>
+Maksimum değer 127'dir (dahil)(2^7 -1)
+<br><br>
+Varsayılan değer 0'dır
+<br><br>
+Bayt veri türü, bir bayt bir tam sayıdan dört kat daha küçük olduğundan, esas olarak tam sayılar yerine büyük dizilerde yerden tasarruf etmek için kullanılır.
+<br><br>
+Örnek - bayt a = 100, bayt b = -50
+<br><br>
+
+<hr>
+<h2>Java short Veri Türü</h2>
+Kısa veri türü, 16 bitlik işaretli ikinin tamamlayıcısı tamsayıdır
+<br><br>
+Minimum değer -32.768 (-2^15)
+<br><br>
+Maksimum değer 32.767'dir (dahil) (2^15 -1)
+<br><br>
+Kısa veri türü, belleği bayt veri türü olarak kaydetmek için de kullanılabilir. Kısa, bir tam sayıdan 2 kat daha küçüktür
+<br><br>
+Varsayılan değer 0'dır.
+<br><br>
+Örnek – kısa s = 10000, kısa r = -20000
+<br><br>
+
+<hr>
+<h2>Java int Veri Türü</h2>
+Int veri türü, 32 bitlik işaretli ikinin tamamlayıcısı tamsayıdır.
+<br><br>
+Minimum değer - 2,147,483,648 (-2^31)
+<br><br>
+Maksimum değer 2,147,483,647(dahil) (2^31 -1)
+<br><br>
+Tamsayı, bellekle ilgili bir endişe olmadığı sürece genellikle integral değerler için varsayılan veri türü olarak kullanılır.
+<br><br>
+Varsayılan değer 0'dır
+<br><br>
+Örnek − int a = 100000, int b = -200000
+<br><br>
+
+<hr>
+<h2>Java long Veri Türü</h2>
+Uzun veri türü, 64 bit işaretli ikinin tamamlayıcısı tamsayıdır
+<br><br>
+Minimum değer -9,223,372,036,854,775,808(-2^63)
+<br><br>
+Maksimum değer: 9,223,372,036,854,775,807 (dahil)(2^63 -1)
+<br><br>
+Bu tür int'den daha geniş bir aralığa ihtiyaç duyulduğunda kullanılır
+<br><br>
+Varsayılan değer 0L'dir
+<br><br>
+Örnek − uzun a = 100000L, uzun b = -200000L
+<br><br>
+
+<hr>
+<h2>Java float Veri Türü</h2>
+Kayan veri türü, tek duyarlıklı 32 bit IEEE 754 kayan noktadır
+<br><br>
+Float esas olarak büyük kayan nokta sayıları dizilerinde bellekten tasarruf etmek için kullanılır
+<br><br>
+Varsayılan değer 0,0f'dir
+<br><br>
+Kayan noktalı veri türü hiçbir zaman para birimi gibi kesin değerler için kullanılmaz
+<br><br>
+Örnek – float f1 = 234.5f
+<br><br>
+
+<hr>
+<h2>Java double Veri Türü</h2>
+double veri türü, çift duyarlıklı 64 bit IEEE 754 kayan noktadır
+<br><br>
+Bu veri türü genellikle ondalık değerler için varsayılan veri türü olarak kullanılır, genellikle varsayılan seçimdir
+<br><br>
+Para birimi gibi kesin değerler için asla çift veri türü kullanılmamalıdır.
+<br><br>
+Varsayılan değer 0,0d'dir
+<br><br>
+Örnek – çift d1 = 123,4
+<br><br>
+
+<hr>
+<h2>Java boolean Veri Türü</h2>
+Boolean veri türü bir bitlik bilgiyi temsil eder
+<br><br>
+Yalnızca iki olası değer vardır: doğru ve yanlış
+<br><br>
+Bu veri türü doğru/yanlış koşullarını izleyen basit bayraklar için kullanılır
+<br><br>
+Varsayılan değer yanlıştır
+<br><br>
+Örnek – boolean bir = doğru
+<br><br>
+
+<hr>
+<h2>Java char Veri Türü</h2>
+char veri türü tek bir 16 bitlik Unicode karakterdir
+<br><br>
+Minimum değer '\u0000' (veya 0)
+<br><br>
+Maksimum değer '\uffff' (veya 65.535 dahil)
+<br><br>
+Char veri türü herhangi bir karakteri saklamak için kullanılır
+<br><br>
+Örnek – karakter harfiA = 'A'
+<br><br>
+
+<hr>
+<h4>Örnek: Farklı İlkel Veri Türlerinin Gösterilmesi</h4>
+Aşağıdaki örnekler yukarıda tartıştığımız çeşitli temel veri türlerinin kullanımını göstermektedir. Boolean ve char değişkenleri bu şekilde yazdırılırken, sayısal veri türlerinde ekleme işlemlerini kullandık.
+<br><br>
+<code>
+<pre>
+public class JavaTester {
+   public static void main(String args[]) {
+
+      byte byteValue1 = 2;
+      byte byteValue2 = 4;
+      byte byteResult = (byte)(byteValue1 + byteValue2);
+
+      System.out.println("Byte: " + byteResult);
+
+      short shortValue1 = 2;
+      short shortValue2 = 4;
+      short shortResult = (short)(shortValue1 + shortValue2);
+
+      System.out.println("Short: " + shortResult);
+
+      int intValue1 = 2;
+      int intValue2 = 4;
+      int intResult = intValue1 + intValue2;
+
+      System.out.println("Int: " + intResult);
+
+      long longValue1 = 2L;
+      long longValue2 = 4L;
+      long longResult = longValue1 + longValue2;
+
+      System.out.println("Long: " + longResult);
+
+      float floatValue1 = 2.0f;
+      float floatValue2 = 4.0f;
+      float floatResult = floatValue1 + floatValue2;
+
+      System.out.println("Float: " + floatResult);
+
+      double doubleValue1 = 2.0;
+      double doubleValue2 = 4.0;
+      double doubleResult = doubleValue1 + doubleValue2;
+
+      System.out.println("Double: " + doubleResult);
+
+      boolean booleanValue = true;
+
+      System.out.println("Boolean: " + booleanValue);
+
+      char charValue = 'A';
+
+      System.out.println("Char: " + charValue);     
+   }
+}
+</pre>
+</code>
+<br><br>
+
+<hr>
+<h2>Referans / Nesne Veri Türüleri (Reference / Object Data Types)</h2>
+Referans veri türleri, sınıfların (classes) tanımlı oluşturucuları (constructors) kullanılarak oluşturulur. Nesnelere erişmek için kullanılırlar. Bu değişkenlerin değiştirilemeyecek belirli bir türde olduğu bildirilir. Örneğin, Employee, Puppy, vb.
+<br><br>
+Sınıf nesneleri ve çeşitli dizi değişkenleri, referans veri türü kapsamına girer. Herhangi bir referans değişkeninin varsayılan değeri null'dur. Bir referans değişkeni, bildirilen türdeki herhangi bir nesneye veya uyumlu herhangi bir türe başvurmak için kullanılabilir.
+<br><br>
+
+<h4>Örnek</h4>
+Aşağıdaki örnek başvuru (demonstrates the reference) (veya nesne (object)) veri türlerini göstermektedir.
+<br><br>
+<code>
+<pre>
+// 'Animal' sınıfının bir nesnesini oluşturmak
+Animal animal = new Animal("Zürafa");
+
+// 'String' sınıfının bir nesnesini oluşturmak
+String myString = new String("Merhaba, Dünya!");
+</pre>
+</code>
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+<script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+<script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

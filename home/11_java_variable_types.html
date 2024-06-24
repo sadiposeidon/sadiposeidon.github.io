@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - Değişken Türleri</h1>
+<h2>Java Değişkeni nedir?</h2>
+Bir değişken bize programlarımızın işleyebileceği adlandırılmış depolama alanı sağlar. Java'daki her değişkenin, değişkenin belleğinin boyutunu ve düzenini belirleyen belirli bir türü vardır. Söz konusu hafızada saklanabilecek değerlerin aralığı ve değişkene uygulanabilecek işlemler kümesi.
+<br><br>
+
+<hr>
+<h2>Değişken Bildirimi ve Başlatma (Variable Declaration and Initialization)</h2>
+Kullanılmadan önce tüm değişkenleri bildirmeniz gerekir. Değişken bildiriminin temel biçimi aşağıdadır.
+<br>
+<code>data type variable [ = value][, variable [ = value] ...] ;</code>
+<br>
+Burada veri türü , Java'nın veri türlerinden biridir ve değişken, değişkenin adıdır. Belirtilen türde birden fazla değişken bildirmek için virgülle ayrılmış bir liste kullanabilirsiniz.
+<br><br>
+
+<hr>
+<h2>Geçerli Değişken Bildirimleri ve Başlatma Örnekleri</h2>
+Aşağıda Java'da değişken bildirimi ve başlatmanın geçerli örnekleri verilmiştir.
+<code>
+<pre>
+int a, b, c;            // a, b ve c olmak üzere üç int'i bildirir.
+int a = 10, b = 10;     // Başlatma örneği
+byte B = 22;            // bayt tipi değişken B'yi başlatır.
+double pi = 3.14159;    // PI değerini bildirir ve atar.
+char a = 'a';           // a i karakter değişkeni 'a' değeriyle başlatıldı
+</pre>
+</code>
+<br>
+
+<hr>
+<h2>Java Değişken Türleri</h2>
+Aşağıda üç tür Java değişkeni yer almaktadır.
+<br><br>
+Yerel değişkenler (Local variables)
+Örnek değişkenler (Instance variables)
+Sınıf / Statik değişkenler (Class / Static variables)
+<br><br>
+
+<hr>
+<h2>1. Java Yerel Değişkenleri (Local Variables)</h2>
+Yerel değişkenler yöntemlerde (methods), yapıcılarda (constructors) veya bloklarda (blocks) bildirilir.
+<br><br>
+Yerel değişkenler yönteme, yapıcıya veya bloğa girildiğinde oluşturulur ve değişken yöntemden, yapıcıdan veya bloktan çıktığında yok edilir.
+<br><br>
+Erişim değiştiricileri (Access modifiers) yerel değişkenler için kullanılamaz.
+<br><br>
+Yerel değişkenler yalnızca bildirilen yöntem (declared method), yapıcı (constructor) veya blok (block) içinde görünür.
+<br><br>
+Yerel değişkenler dahili olarak yığın (stack) düzeyinde uygulanır.
+<br><br>
+Yerel değişkenler için varsayılan bir değer yoktur, bu nedenle ilk kullanımdan önce yerel değişkenler bildirilmeli ve bir başlangıç değeri atanmalıdır.
+<br><br>
+
+<h4>Örnek 1: Değişkenin başlatmayla birlikte yerel kapsamı</h4>
+Burada yaş yerel bir değişkendir. Bu, pupAge() yönteminin içinde tanımlanır ve kapsamı yalnızca bu yöntemle sınırlıdır.
+<br><br>
+<code>
+<pre>
+public class Test {
+   public void pupAge() {
+
+      int age = 0;
+      age = age + 7;
+
+      System.out.println("Puppy age is : " + age);
+   }
+
+   public static void main(String args[]) {
+
+      Test test = new Test();
+      test.pupAge();
+   }
+}
+</pre>
+</code>
+<br>
+
+<h4>Örnek 2: Değişkenin başlatma olmadan yerel kapsamı</h4>
+Aşağıdaki örnek, onu başlatmadan age kullanıyor, bu nedenle derleme sırasında hata verecektir.
+<br><br>
+<code>
+<pre>
+public class Test {
+   public void pupAge() {
+      int age;
+      age = age + 7;
+      System.out.println("Puppy age is : " + age);
+   }
+
+   public static void main(String args[]) {
+      Test test = new Test();
+      test.pupAge();
+   }
+}
+</pre>
+</code>
+<br>
+
+<hr>
+<h2>2. Java Örnek Değişkenler (Instance Variables)</h2>
+Örnek değişkenler bir sınıfta ancak bir yöntemin, yapıcının veya herhangi bir bloğun dışında bildirilir .
+<br><br>
+Heap'teki bir nesne için bir alan tahsis edildiğinde, her örnek değişken değeri için bir yuva oluşturulur.
+<br><br>
+Örnek değişkenler, 'yeni' anahtar kelimesi kullanılarak bir nesne oluşturulduğunda oluşturulur ve nesne yok edildiğinde yok edilir.
+<br><br>
+Örnek değişkenler, birden fazla yöntem, kurucu veya blok tarafından başvurulması gereken değerleri veya sınıf boyunca mevcut olması gereken bir nesnenin durumunun önemli kısımlarını tutar.
+<br><br>
+Örnek değişkenler kullanımdan önce veya sonra sınıf düzeyinde bildirilebilir.
+<br><br>
+Örnek değişkenler için erişim değiştiricileri verilebilir.
+<br><br>
+Örnek değişkenler sınıftaki tüm yöntemler, yapıcılar ve blok için görülebilir. Normalde bu değişkenlerin özel (erişim düzeyi) yapılması önerilir. Ancak erişim değiştiricilerin kullanımıyla bu değişkenler için alt sınıfların görünürlüğü sağlanabilir.
+<br><br>
+Örnek değişkenlerin varsayılan değerleri vardır. Sayılar için varsayılan değer 0'dır, Booleans için false'tur ve nesne referansları için null'dur. Değerler bildirim sırasında veya yapıcı içinde atanabilir.
+<br><br>
+Örnek değişkenlere, sınıf içindeki değişken adı çağrılarak doğrudan erişilebilir. Ancak statik yöntemler içerisinde (örnek değişkenlerine erişilebilirlik verildiğinde), bunların tam nitelenmiş ad kullanılarak çağrılması gerekir. ObjectReference.VariableName
+<br><br>
+
+<h4>Java Örnek Değişkenleri Örneği</h4>
+<br>
+<code>
+<pre>
+import java.io.*;
+
+public class Employee {
+
+   // bu örnek değişken herhangi bir alt sınıf için görülebilir.
+   public String name;
+
+   // maaş değişkeni yalnızca Çalışan sınıfında görünür.
+   private double salary;
+
+   // Yapıcıda isim değişkeni atanır.
+   public Employee (String empName) {
+
+      name = empName;
+   }
+
+   // Maaş değişkenine bir değer atanır.
+   public void setSalary(double empSal) {
+
+      salary = empSal;
+   }
+
+   // Bu yöntem çalışan ayrıntılarını yazdırır.
+   public void printEmp() {
+
+      System.out.println("name  : " + name );
+      System.out.println("salary :" + salary);
+   }
+
+   public static void main(String args[]) {
+
+      Employee empOne = new Employee("Ransika");
+      empOne.setSalary(1000);
+      empOne.printEmp();
+   }
+}
+</pre>
+</code>
+<br>
+
+<hr>
+<h2>3. Java Sınıf / Statik Değişkenler (Class / Static Variables)</h2>
+Statik değişkenler olarak da bilinen sınıf değişkenleri, bir sınıfta statik anahtar kelimeyle ancak bir yöntemin, yapıcının veya bloğun dışında bildirilir.
+<br><br>
+Ondan kaç nesne oluşturulduğuna bakılmaksızın, her sınıf değişkeninin sınıf başına yalnızca bir kopyası olacaktır.
+<br><br>
+Statik değişkenler, sabit olarak bildirilmek dışında nadiren kullanılır. Sabitler, genel/özel, final ve statik olarak bildirilen değişkenlerdir. Sabit değişkenler hiçbir zaman başlangıç değerlerinden değişmezler.
+<br><br>
+Statik değişkenler statik bellekte saklanır. Bildirilen final dışında statik değişkenlerin kullanılması ve genel veya özel sabitler olarak kullanılması nadirdir.
+<br><br>
+Statik değişkenler program başlatıldığında oluşturulur ve program durdurulduğunda yok edilir.
+<br><br>
+Görünürlük örnek değişkenlere benzer. Ancak çoğu statik değişken, sınıfın kullanıcıları tarafından kullanılabilir olması gerektiğinden, genel olarak bildirilir.
+<br><br>
+Varsayılan değerler örnek değişkenlerle aynıdır. Sayılar için varsayılan değer 0'dır; Booleans için bu yanlıştır; ve nesne referansları için null'dur. Değerler bildirim sırasında veya yapıcı içinde atanabilir. Ek olarak, özel statik başlatıcı bloklarında değerler atanabilir.
+<br><br>
+Statik değişkenlere ClassName.VariableName sınıf adı ile çağrılarak erişilebilir .
+<br><br>
+Sınıf değişkenleri genel statik final olarak bildirildiğinde, değişken adlarının (sabitlerin) tümü büyük harfle yazılır. Statik değişkenler genel ve nihai değilse, adlandırma sözdizimi örnek ve yerel değişkenlerle aynıdır.
+<br><br>
+
+<hr>
+<h4>Java Sınıfı/Statik Değişkenleri Örneği</h4>
+<br>
+<code>
+<pre>
+import java.io.*;
+
+public class Employee {
+
+   // salary  variable is a private static variable
+   private static double salary;
+
+   // DEPARTMENT is a constant
+   public static final String DEPARTMENT = "Development ";
+
+   public static void main(String args[]) {
+      salary = 1000;
+      System.out.println(DEPARTMENT + "average salary:" + salary);
+   }
+}
+</pre>
+</code>
+<br>
+
+<strong>Not</strong> − Değişkenlere dışarıdan bir sınıftan erişiliyorsa sabite Employee.DEPARTMENT olarak erişilmelidir.
+<br><br>
+
+<hr>
+<h2>Sırada ne var?</h2>
+Bu bölümde zaten erişim değiştiricileri (genel ve özel) kullandınız. Bir sonraki bölümde Erişim Değiştiriciler ve Erişim Dışı Değiştiriciler ayrıntılı olarak açıklanacaktır.
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

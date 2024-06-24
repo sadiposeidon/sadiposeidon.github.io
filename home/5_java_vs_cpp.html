@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java ve C++</h1>
+Java genel amaçlı, üst düzey bir programlama dilidir. Java, web geliştirme, Makine Öğrenimi ve diğer ileri düzey yazılım geliştirme için kullanılır. Java programlama dili ilk olarak James Gosling tarafından başlatılan ve Sun Microsystems'in Java platformunun (Java 1.0 [J2SE]) temel bileşeni olarak 1995 yılında piyasaya sürülen Sun Microsystems tarafından geliştirildi.
+<br><br>
+C++ orta düzey, büyük/küçük harfe duyarlı, nesne yönelimli bir programlama dilidir. Bjarne Stroustrup, Bell Laboratuvarlarında C++'ı yarattı. C++, Windows, Mac OS ve Linux'ta çalışan, platformdan bağımsız bir programlama dilidir. C++ donanıma yakındır ve düşük seviyeli programlamaya izin verir. Bu, geliştiriciye bellek üzerinde kontrol, gelişmiş performans ve güvenilir yazılım sağlar.
+<br><br>
+C++ ve Java'ya genel bir bakış ve bu iki programlama dilinin birbirinden nasıl farklı olduğunu öğrenmek için bu makaleyi okuyun.
+<br><br>
+
+<hr>
+<h2>Java nedir?</h2>
+Java Standard Edition'ın en son sürümü Java SE 21'dir. Java'nın ilerlemesi ve yaygınlaşmasıyla birlikte, çeşitli platform türlerine uyacak şekilde birden fazla yapılandırma oluşturuldu. Örneğin: Kurumsal Uygulamalar için J2EE, Mobil Uygulamalar için J2ME.
+<br><br>
+Yeni J2 sürümleri sırasıyla Java SE, Java EE ve Java ME olarak yeniden adlandırıldı. Java'nın <strong>Bir Kez Yaz, Her Yerde Çalıştır</strong> özelliği garanti edilir.
+<br><br>
+
+<hr>
+<h2>Java'nın özellikleri</h2>
+<strong>Nesneye yönelik (Object Oriented): </strong>Java'da her şey bir Object'tir. Java, Object modelini temel aldığından kolaylıkla genişletilebilir.
+<br><br>
+<strong>Platformdan bağımsız (Platform Independent): </strong>C ve C++ da dahil olmak üzere diğer birçok programlama dilinden farklı olarak Java derlendiğinde, platforma özgü makinede değil, platformdan bağımsız bayt kodunda derlenir. Bu bayt kodu web üzerinden dağıtılır ve hangi platformda çalıştırılırsa çalıştırılsın Java Sanal Makinesi (JVM) tarafından yorumlanır.
+<br><br>
+<strong>Basit (Simple): </strong>Java öğrenmesi kolay olacak şekilde tasarlanmıştır. OOP Java'nın temel konseptini anlarsanız , ustalaşması kolay olacaktır.
+<br><br>
+<strong>Güvenli (Secure): </strong>Java'nın güvenli özelliği sayesinde virüssüz, kurcalanmaya karşı korumalı sistemler geliştirmenize olanak sağlar. Kimlik doğrulama teknikleri genel anahtar şifrelemesine dayanır.
+<br><br>
+<strong>Mimariden bağımsız (Architecture-neutral): </strong>Java derleyicisi, Java çalışma zamanı sisteminin varlığıyla derlenmiş kodu birçok işlemcide yürütülebilir hale getiren, mimariden bağımsız bir nesne dosyası formatı oluşturur.
+<br><br>
+<strong>Taşınabilir (Portable): </strong>Mimariden bağımsız olması ve spesifikasyonun uygulamaya bağımlı yönlerinin bulunmaması, Java'yı taşınabilir kılar. Java'daki derleyici, bir POSIX alt kümesi olan temiz taşınabilirlik sınırıyla ANSI C'de yazılmıştır.
+<br><br>
+<strong>Sağlam (Robust): </strong>Java, esas olarak derleme zamanı hata denetimi ve çalışma zamanı denetimi üzerinde durarak hataya açık durumları ortadan kaldırmak için çaba gösterir.
+<br><br>
+<strong>Çok iş parçacıklı (Multithreaded): </strong>Java'nın çok iş parçacıklı özelliği sayesinde aynı anda birçok görevi gerçekleştirebilen programlar yazmak mümkündür. Bu tasarım özelliği, geliştiricilerin sorunsuz çalışabilen etkileşimli uygulamalar oluşturmasına olanak tanır.
+<br><br>
+<strong>Yorumlanmış (Interpreted): </strong>Java bayt kodu anında yerel makine talimatlarına çevrilir ve hiçbir yerde saklanmaz. Bağlantının artımlı ve hafif bir süreç olması nedeniyle geliştirme süreci daha hızlı ve analitiktir.
+<br><br>
+<strong>Yüksek performans (High Performance): </strong>Tam Zamanında derleyicilerin kullanımıyla Java, yüksek performans sağlar.
+<br><br>
+<strong>Dağıtılmış (Distributed): </strong>Java, internetin dağıtılmış ortamı için tasarlanmıştır.
+<br><br>
+<strong>Dinamik (Dynamic): </strong>Java , gelişen ortama uyum sağlayacak şekilde tasarlandığından, C veya C++' dan daha dinamik olarak kabul edilir . Java programları, çalışma zamanındaki nesnelere erişimleri doğrulamak ve çözümlemek için kullanılabilecek geniş miktarda çalışma zamanı bilgisi taşıyabilir.
+<br><br>
+
+<hr>
+<h2>Java Örneği</h2>
+Aşağıdaki basit Java programına bir göz atın.
+<br><br>
+<code>
+<pre>
+package com.example;
+
+import java.util.Scanner;
+
+public class JavaTester {
+
+   public static void main(String args[]) {
+
+      String a, b;
+      Scanner scanner = new Scanner(System.in);  
+
+      System.out.println("a değişkeninin değerini girin");
+      a = scanner.nextLine();
+
+      System.out.println("b değişkeninin değerini girin");
+      b = scanner.nextLine();
+
+      System.out.println("a için girdiğiniz değer: " + a);
+      System.out.println("b için girdiğiniz değer: " + b);
+
+      scanner.close();
+   }       
+}
+</pre>
+</code>
+Örneğimizde "a" ve "b" adlı iki değişkeni aldık ve bu değişkenlere bir miktar değer atadık. Java'da, değişkenler için veri türünü açıkça bildirmemiz gerektiğini unutmayın, çünkü Java kesin olarak yazılan bir dildir. Java nesne yönelimli bir dil olduğundan, herhangi bir eylemi gerçekleştirmek için nesneleri kullanırız. Örnekte, System.in nesnesi tarafından temsil edilen konsoldan kullanıcı girişini okumak için Scanner sınıfı nesnesini kullandık. Alınan değerleri yazdırmak için System.out nesne yöntemi println() kullanılır.
+<br><br>
+
+<hr>
+<h2>C++ nedir?</h2>
+C++, dik bir öğrenme eğrisine sahip, statik olarak yazılmış, derlenmiş, çok paradigmalı, genel amaçlı bir programlama dilidir. Video oyunları, masaüstü uygulamaları ve gömülü sistemler onu yaygın olarak kullanıyor. C++, C ile o kadar uyumludur ki neredeyse tüm C kaynak kodlarını hiçbir değişiklik yapmadan oluşturabilir. Nesne yönelimli programlama, C++'ı C'den daha iyi yapılandırılmış ve daha güvenli bir dil haline getirir.
+C++'ın özellikleri
+<br><br>
+C++'ın bazı özelliklerine ve popülerliğinin nedenine bakalım.
+<br><br>
+
+
+<strong>Orta düzey dil (Middle-level language): </strong>Hem sistem geliştirme hem de Medya Oynatıcılar, Photoshop, Oyun Motorları vb. gibi büyük ölçekli tüketici uygulamaları için kullanılabildiğinden orta düzey bir dildir.
+<br><br>
+<strong>Yürütme hızı (Execution Speed): </strong>C++ kodu hızlı çalışır. Çünkü derlenmiş ve prosedürleri yoğun bir şekilde kullanıyor. Çöp toplama, dinamik yazma ve diğer modern özellikler programın yürütülmesini engeller.
+<br><br>
+<strong>Nesne yönelimli dil (Object-oriented language): </strong>Nesne yönelimli programlama esnek ve yönetilebilirdir. Büyük uygulamalar mümkündür. Kodun büyümesi prosedür kodunun işlenmesini zorlaştırır. C++'ın C'ye göre en önemli avantajı.
+<br><br>
+<strong>Kapsamlı kütüphane desteği (Extensive Library Support): </strong>C++ geniş bir kütüphaneye sahiptir. Hızlı geliştirme için üçüncü taraf kütüphaneler desteklenir.
+<br><br>
+
+<hr>
+<h2>C++ Örneği</h2>
+Aşağıda yazılı bir örnek üzerinden C++'ın sözdizimini anlayalım.
+<br><br>
+<code>
+<pre>
+#include
+using namespace std;
+
+int main() {
+   int a, b;
+
+   cout << "a değişkeninin değerini girin \n";
+   cin >> a;
+
+   cout << "b değişkeninin değerini girin";
+   cin >> b;
+
+   cout << "a'nın değeri"<< a << "ve" << b << "'dir";
+   return 0;
+}
+</pre>
+</code>
+Örneğimizde "a" ve "b" adlı iki değişkenin klavye aracılığıyla kullanıcıdan girdisini alıyoruz ve verileri konsolda görüntülüyoruz.
+<br><br>
+
+<hr>
+<h2>Java ve C++ Arasındaki Fark</h2>
+Hem Java hem de C++ en popüler programlama dilleri arasındadır. Her ikisinin de avantajları ve dezavantajları var. Bu dersimizde onları birbirinden ayıran karakteristik özelliklere yakından bakacağız.
+<br><br>
+<strong>1. Tarafından geliştirilmiş (Developed by): </strong>Java, Sun Microsystems'da James Gosling tarafından geliştirildi. Başlangıçta gömülü sistemler, set üstü kutular, televizyonlar vb. için tasarlandı. Daha sonra internet tabanlı uygulama geliştirmede tercih edilen dil haline geldi
+<br><br>
+<strong>1. Tarafından geliştirilmiş (Developed by): </strong>C++, Bell Laboratuvarlarında Bjarne Stroustrup tarafından C dilinin bir uzantısı olarak geliştirildi. Hem yüksek seviyeli hem de düşük seviyeli makine kodu erişimini destekler. C++ esas olarak sistem yazılımları, derleyiciler vb. geliştirmek için kullanılır.
+<br><br>
+
+<hr>
+<strong>2. Tarafından etkilenmiş (Influenced by): </strong>Ada 83, Pascal, C++, C#'dan etkilenmiştir.
+<br><br>
+<strong>2. Tarafından etkilenmiş (Influenced by): </strong>Ada, ALGOL 68, C, ML, Simula, Smalltalk'tan etkilendi.
+<br><br>
+
+<hr>
+<strong>3. Mimariye bağımlılık (Dependency on Architecture): </strong>Java bayt kodu herhangi bir işletim sisteminde çalışır. Bayt kodu JVM için hedeflenmiştir. JVM veya Java Sanal Makinesi daha sonra bayt kodunu yorumlar ve temeldeki makineye özel kodu çalıştırır. Bu nedenle Java kodunun farklı makinelerde çalışacak şekilde değiştirilmesine gerek yoktur.
+<br><br>
+<strong>3. Mimariye bağımlılık (Dependency on Architecture): </strong>Kütüphaneler farklı sistemlerde farklı olduğundan her işletim sisteminde çalışmaz.
+<br><br>
+
+<hr>
+<strong>4. Platform bağımsızlığı (Platform independence): </strong>Herhangi bir işletim sistemi üzerinde çalışabilir. Java kodu platformdan bağımsızdır. Platforma özel kod gerekmez. int, long'un boyutu tüm platformlarda aynı kalır.
+<br><br>
+<strong>4. Platform bağımsızlığı (Platform independence): </strong>Farklı platformlarda farklı şekilde derlenir, herhangi bir işletim sisteminde çalıştırılamaz.
+<br><br>
+
+<hr>
+<strong>5. Taşınabilirlik (Portablity): </strong>Taşınabilir. Platformdan bağımsız olduğundan, bir java kodu herhangi bir platforma özel değişiklik yapılmadan herhangi bir makinede olduğu gibi aktarılabilir. Windows makinesinde yazılan bir java kodu, Unix makinesinde hiçbir değişiklik yapılmadan aynı şekilde çalışabilir.
+<br><br>
+<strong>5. Taşınabilirlik (Portablity): </strong>Taşınabilir değildir.
+<br><br>
+
+<hr>
+<strong>6. Yorumlanmış / Derlenmiş (Interpreted/Compiled): </strong>Yorumlanan bir dildir.
+<br><br>
+<strong>6. Yorumlanmış / Derlenmiş (Interpreted/Compiled): </strong>Derlenmiş bir dildir.
+<br><br>
+
+<hr>
+<strong>7. Bellek yönetimi (Memory management): </strong>Bellek yönetimi otomatik olarak yapılır. Java, bir nesne gerekmediğinde belleği otomatik olarak serbest bırakan Çöp Toplayıcı (Garbage Collector) hizmetini sağlar.
+<br><br>
+<strong>7. Bellek yönetimi (Memory management): </strong>Bellek yönetimi manuel olarak yapılmalıdır.
+<br><br>
+
+<hr>
+<strong>8. Sanal anahtar (virtual Keyword): </strong>'Sanal' anahtar kelimesi yok.
+<br><br>
+<strong>8. Sanal anahtar (virtual Keyword): </strong>'Sanal' anahtar kelimesine sahiptir.
+<br><br>
+
+<hr>
+<strong>9. Çoklu kalıtım desteği (Multiple Inheritance support): </strong>Yalnızca tekli mirası destekler. Arayüzler (yalnızca kısmi) kullanılarak çoklu kalıtım elde edilebilir. Bir sınıf yalnızca tek bir sınıfı genişletebilir. Her ne kadar arayüz çoklu kalıtımı genişletebilse de. Çoklu kalıtım belirsiz sonuçlara yol açabilir. Virtual anahtar sözcüğü Java'da desteklenmediğinden çoklu miras desteklenmez.
+<br><br>
+<strong>9. Çoklu kalıtım desteği (Multiple Inheritance support): </strong>Tekli ve çoklu Kalıtımı destekler. Sanal anahtar kelime kullanılarak belirsiz referans çözülebilir.
+<br><br>
+
+<hr>
+<strong>10. Operatör aşırı yükleme desteği (operator overloading support): </strong>Operatörün aşırı yüklenmesini desteklemez. Java yalnızca yöntemin aşırı yüklenmesini destekler. Operatör aşırı yüklemesinin temel dile karmaşıklık kattığı düşünülür ve bu nedenle dili basit tutmak için uygulanmaz.
+<br><br>
+<strong>10. Operatör aşırı yükleme desteği (operator overloading support): </strong>Operatörün aşırı yüklenmesini destekler. C++'da hem yöntemleri hem de operatörleri aşırı yükleyebiliriz.
+<br><br>
+
+<hr>
+<strong>11. İşaretçiler (pointers): </strong>İşaretçilere sınırlı destek sağlar. İşaretçiler karmaşık bir işlevsellik olduğundan Java bunları kullanmaktan kaçınır. Nesnelere veya tam olarak onların adreslerine işaret etmek için referans kavramını sağlar.
+<br><br>
+<strong>11. İşaretçiler (pointers): </strong>İşaretçi işlemlerini destekler. Geliştiriciler karmaşık işlemleri gerçekleştirebilir, işaretçileri kullanarak optimize edilmiş bellek tabanlı kod yazabilir. Ancak oldukça karmaşıktır ve bu konularda uzmanlaşmak güçlü programlama becerileri gerektirir.
+<br><br>
+
+<hr>
+<strong>12. Düşük seviyeli makine kodu erişimi (Low level machine code access): </strong>Üst düzey işlevlere sahiptirler. Java, platformdan bağımsız bir dildir ve Java'nın bayt kodu olarak derlenmiş kodu, kodu daha da düşük seviyeli koda dönüştüren JVM içindir. Dolayısıyla geliştiriciler Java kullanarak düşük seviyeli makine kodu yazamazlar. Java'nın esas olarak uygulama geliştirmede kullanılmasının nedeni budur.
+<br><br>
+<strong>12. Düşük seviyeli makine kodu erişimi (Low level machine code access): </strong>Düşük seviyeli işlevlere sahiptirler. C++ düşük seviyeli makine kodu kodunu desteklediğinden. Esas olarak sistem yazılımları, derleyiciler vb. yazmak için kullanılır.
+<br><br>
+
+<hr>
+<strong>13. Yerel kütüphanelere erişim (Native libraries access): </strong>Doğrudan yerel kütüphane çağrılarını desteklemez. Java, düşük seviyeli makine koduyla çalışacak şekilde tasarlanmamıştır ve yerel çağrıları desteklemez. Ancak yerel çağrıları üçüncü taraf kütüphaneleri kullanarak yapılandırabiliriz.
+<br><br>
+<strong>13. Yerel kütüphanelere erişim (Native libraries access): </strong>Doğrudan sistem kitaplığı çağrılarını destekler.
+<br><br>
+
+<hr>
+<strong>14. Dokümantasyon yorumu (documentation comment): </strong>Kaynak kodu için belge yorumunu (/**.. */) destekler . Javadoc aracı, kaynak koddan dokümantasyon yorumlarını okuyabilir ve yorumlara dayalı olarak html tabanlı Java dokümantasyonu oluşturabilir.
+<br><br>
+<strong>14. Dokümantasyon yorumu (documentation comment): </strong>Kaynak kodu için dokümantasyon yorumunu desteklemez.
+<br><br>
+
+<hr>
+<strong>15. Çoklu iş parçacığı (Multithreading): </strong>İş parçacığı işlemlerini destekler. Java varsayılan olarak çoklu iş parçacığı desteğine sahiptir. Eşzamanlı programlamanın verimliliği artırmasına ve harcanan zamanı azaltmasına olanak tanır
+<br><br>
+<strong>15. Çoklu iş parçacığı (Multithreading): </strong>Tasarım gereği konuları desteklemiyor. Üçüncü taraf iş parçacığı kitaplıkları kullanılarak yapılabilir.
+<br><br>
+
+<hr>
+<strong>16. Konsol girişi (Console Input): </strong>Giriş için 'System' sınıfını, yani System.in'i kullanır. System.in sınıfı, konsoldaki kullanıcıdan girdi almak için kullanılabilir.
+<br><br>
+<strong>16. Konsol girişi (Console Input): </strong>Giriş işlemi için 'cin'i kullanır. cin kullanıcının konsola değer girmesine izin verir.
+<br><br>
+
+<hr>
+<strong>17. Konsol çıkışı (Console Output): </strong>Çıkış için System.out'u kullanır. System.out.println() yöntemi, gerekli değeri sistem konsoluna yazdırır.
+<br><br>
+<strong>17. Konsol çıkışı (Console Output): </strong>Çıkış işlemi için 'cout'u kullanır. cout gerekli değeri sistem konsoluna yazdırır.
+<br><br>
+
+<hr>
+<strong>18. Küresel destek (global support): </strong>Küresel kapsamı desteklemiyor. Java katı bir nesne yönelimli dildir ve genel kapsam mevcut değildir. Paketleri kullanarak paket kapsamını destekler.
+<br><br>
+<strong>18. Küresel destek (global support): </strong>Ad alanı kapsamının yanı sıra küresel kapsamı da destekler.
+<br><br>
+
+<hr>
+<strong>19. Yapı / sendika desteği (struct/union support): </strong>Yapıları ve birlikleri desteklemez.
+<br><br>
+<strong>19. Yapı / sendika desteği (struct/union support): </strong>Yapıları ve sendikaları destekler.
+<br><br>
+
+<hr>
+<strong>20. Git anahtarı (goto keyword): </strong>'Goto' anahtar kelimesine sahip değil. Ancak aynı işlevselliğe etiketler kullanılarak da ulaşılabilir. Bir break/continue ifadesi etiketli bir ifade konumuna atlayabilir.
+<br><br>
+<strong>20. Git anahtarı (goto keyword): </strong>'Goto' anahtar kelimesini destekler. Goto anahtar sözcüğünü kullanarak etiketli herhangi bir konuma atlayabiliriz.
+<br><br>
+
+<hr>
+<strong>21. Değere / referansa göre geçiş (pass by value/reference): </strong>Yalnızca değere göre geçiş yöntemini destekler. Nesne referansı bile teknik olarak bir yönteme değer olarak aktarılır.
+<br><br>
+<strong>21. Değere / referansa göre geçiş (pass by value/reference): </strong>Değere göre geçiş ve referans yöntemlerine göre geçiş'i destekler. Referansla geçiş durumunda işaretçi veya & gösterimi gereklidir.
+<br><br>
+
+<hr>
+<strong>22. Bellek yönetimi (Memory Management): </strong>Çöp toplayıcıyı kullanarak nesne yönetimini otomatik olarak gerçekleştirir. Geliştiricilerin nesneler için bellek ayırması veya nesneler kullanılmadığında bunların yerini değiştirmesi gerekmez. Çöp Toplayıcı hizmeti otomatik olarak alanı algılar ve boşaltır. GC hizmeti nedeniyle Java'da bellek sızıntısı olasılığı çok daha azdır.
+<br><br>
+<strong>22. Bellek yönetimi (Memory Management): </strong>'Yeni' ve 'sil' yardımıyla nesne yönetimini manuel olarak gerçekleştirir. Geliştiricilerin, bellek sızıntılarını önlemek amacıyla belleğin uygun şekilde tahsis edildiğinden/tahsis edildiğinden emin olmak için önlemler alması gerekir.
+
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

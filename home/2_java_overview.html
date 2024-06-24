@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - Genel Bakış</h1>
+Java programlama dili ilk olarak James Gosling tarafından başlatılan ve Sun Microsystems'in Java platformunun (Java 1.0 [J2SE]) temel bileşeni olarak 1995 yılında piyasaya sürülen Sun Microsystems tarafından geliştirildi.
+<br><br>
+Java Standard Edition'ın en son sürümü Java SE 8'dir. Java'nın gelişmesi ve yaygınlaşmasıyla birlikte, çeşitli platform türlerine uyacak şekilde birden fazla yapılandırma oluşturuldu. Örneğin: Kurumsal Uygulamalar için J2EE, Mobil Uygulamalar için J2ME.
+<br><br>
+Yeni J2 sürümleri sırasıyla Java SE, Java EE ve Java ME olarak yeniden adlandırıldı. Java'nın Bir Kez Yaz, Her Yerde Çalıştır <strong>Write Once, Run Anywhere (WORA)</strong> özelliği garanti edilir.
+<br><br>
+
+
+
+<strong>Nesneye yönelik (Object Oriented): </strong>Java'da her şey bir Nesnedir. Java, Object modelini temel aldığından kolaylıkla genişletilebilir.
+<br><br>
+<strong>Platformdan bağımsız (Platform Independent): </strong>C ve C++ da dahil olmak üzere diğer birçok programlama dilinden farklı olarak Java derlendiğinde, platforma özel bir makinede değil, platformdan bağımsız bayt kodunda derlenir. Bu bayt kodu web üzerinden dağıtılır ve hangi platformda çalıştırılırsa çalıştırılsın Sanal Makine (JVM) tarafından yorumlanır.
+<br><br>
+<strong>Basit (Simple): </strong>Java öğrenmesi kolay olacak şekilde tasarlanmıştır. OOP Java'nın temel konseptini anlarsanız, ustalaşması kolay olacaktır.
+<br><br>
+<strong>Güvenli (Secure): </strong>Java'nın güvenli özelliği sayesinde virüssüz, kurcalanmaya karşı korumalı sistemler geliştirmenize olanak sağlar. Kimlik doğrulama teknikleri genel anahtar şifrelemesine dayanmaktadır.
+<br><br>
+<strong>Mimariden bağımsız (Architecture-neutral): </strong>Java derleyicisi, Java çalışma zamanı sisteminin varlığıyla derlenmiş kodu birçok işlemcide yürütülebilir hale getiren, mimariden bağımsız bir nesne dosyası formatı oluşturur.
+<br><br>
+<strong>Taşınabilir (Portable): </strong>Mimariden bağımsız olması ve spesifikasyonun uygulamaya bağımlı yönlerinin bulunmaması, Java'yı taşınabilir kılar. Java'daki derleyici, bir POSIX alt kümesi olan temiz taşınabilirlik sınırıyla ANSI C'de yazılmıştır.
+<br><br>
+<strong>Sağlamlık (Robust): </strong>Java, esas olarak derleme zamanı hata denetimi ve çalışma zamanı denetimi üzerinde durarak hataya açık durumları ortadan kaldırmak için çaba gösterir.
+<br><br>
+<strong>Çok iş parçacıklı (Multithreaded): </strong>Java'nın çok iş parçacıklı özelliği sayesinde aynı anda birçok görevi gerçekleştirebilen programlar yazmak mümkündür. Bu tasarım özelliği, geliştiricilerin sorunsuz çalışabilen etkileşimli uygulamalar oluşturmasına olanak tanır.
+<br><br>
+<strong>Yorumlanmış (Interpreted): </strong>Java bayt kodu anında yerel makine talimatlarına çevrilir ve hiçbir yerde saklanmaz. Bağlantının artımlı ve hafif bir süreç olması nedeniyle geliştirme süreci daha hızlı ve analitiktir.
+<br><br>
+<strong>Yüksek performans (High Performance): </strong>Tam Zamanında derleyicilerin kullanımıyla Java, yüksek performans sağlar.
+<br><br>
+<strong>Dağıtılmış (Distributed): </strong>Java, internetin dağıtılmış ortamı için tasarlanmıştır.
+<br><br>
+<strong>Dinamik (Dynamic): </strong>Java, gelişen ortama uyum sağlayacak şekilde tasarlandığından, C veya C++'dan daha dinamik olarak kabul edilir. Java programları, çalışma zamanındaki nesnelere erişimleri doğrulamak ve çözümlemek için kullanılabilecek geniş miktarda çalışma zamanı bilgisi taşıyabilir.
+<br><br>
+
+<hr>
+<h2>Java'nın Tarihi</h2>
+James Gosling, Haziran 1991'de birçok set üstü kutu projesinden birinde kullanılmak üzere Java dili projesini başlattı. Başlangıçta Gosling'in ofisinin önünde bulunan meşe ağacından dolayı 'Meşe' olarak adlandırılan dil, aynı zamanda 'Yeşil' adını da aldı ve daha sonra rastgele kelimelerden oluşan bir listeden Java olarak yeniden adlandırıldı.
+<br><br>
+Sun, ilk genel uygulamayı 1995 yılında Java 1.0 olarak piyasaya sürdü. Bir Kez Yaz, Her Yerde Çalıştır <strong>Write Once, Run Anywhere (WORA)</strong> sözü verdi ve popüler platformlarda ücretsiz çalışma süreleri sağladı.
+<br><br>
+13 Kasım 2006'da Sun, Java'nın çoğunu GNU Genel Kamu Lisansı (GPL) koşulları altında ücretsiz ve açık kaynaklı yazılım olarak yayınladı.
+<br><br>
+8 Mayıs 2007'de Sun süreci tamamladı ve Sun'ın telif hakkına sahip olmadığı küçük bir kod kısmı dışında Java'nın tüm çekirdek kodlarını ücretsiz ve açık kaynak haline getirdi.
+<br><br>
+
+<hr>
+<h2>İhtiyacınız Olan Araçlar</h2>
+Bu eğitimde tartışılan örnekleri gerçekleştirmek için, en az 64 MB RAM'e (128 MB RAM önerilir) sahip bir Pentium 200-MHz bilgisayara ihtiyacınız olacaktır.
+<br><br>
+Linux 7.1 veya Windows xp/7/8 işletim sistemi
+<br><br>
+JavaJDK8
+<br><br>
+Microsoft Not Defteri veya başka bir metin düzenleyici
+<br><br>
+
+Bu eğitim, Java kullanarak GUI, ağ oluşturma ve web uygulamaları oluşturmak için gerekli becerileri sağlayacaktır.
+<br><br>
+
+<h2>Sırada ne var?</h2>
+Bir sonraki bölüm Java'yı ve belgelerini nasıl edinebileceğiniz konusunda size rehberlik edecektir. Son olarak Java'nın nasıl kurulacağı ve Java uygulamaları geliştirmek için ortamın nasıl hazırlanacağı konusunda talimatlar verilmektedir.
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

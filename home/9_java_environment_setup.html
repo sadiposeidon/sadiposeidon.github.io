@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - Ortam Kurulumu (Environment Setup)</h1>
+<h2>Java Geliştirme Ortamınızı Kurun</h2>
+Java programlama dili için kendi ortamınızı oluşturmak istiyorsanız bu eğitim tüm süreç boyunca size rehberlik edecektir. Java ortamınızı kurmak için lütfen aşağıda verilen adımları izleyin.
+<br><br>
+Java SE ücretsiz olarak indirilebilir. İndirmek için www.oracle.com/in/java/technologies/downloads adresine gidin, lütfen işletim sisteminizle uyumlu bir sürümü indirin.
+<br><br>
+Java'yı indirmek için talimatları izleyin ve Java'yı makinenize yüklemek için .exe dosyasını çalıştırın. Java'yı makinenize yükledikten sonra, ortam değişkenlerini doğru kurulum dizinlerini işaret edecek şekilde ayarlamanız gerekir.
+<br><br>
+
+<hr>
+<h4>Windows için Ortam Yolunu Ayarlama</h4>
+Java'yı c:\Program Files\java\jdk dizinine yüklediğinizi varsayalım.
+<br>
+Windows için Java ortamı yolunu ayarlama adımları aşağıda verilmiştir.
+<br><br>
+<strong>'Bilgisayarım'a</strong> sağ tıklayın ve <strong>'Özellikler'i</strong> seçin.
+<br>
+<strong>'Gelişmiş'</strong> sekmesinin altındaki <strong>'Ortam değişkenleri'</strong> düğmesini tıklayın.
+<br>
+Şimdi, <strong>'Yol'</strong> değişkenini düzenleyin ve sonuna Java yürütülebilir dizininin yolunu ekleyin.
+<br>
+<strong>C:\Program Files\java\jdk\bin</strong>
+<br><br>
+
+<hr>
+<h4>Linux, UNIX, Solaris, FreeBSD için Ortam Yolunu Ayarlama</h4>
+Ortam değişkeni PATH, Java ikili dosyalarının yüklendiği noktaya ayarlanmalıdır. Bunu yaparken sorun yaşıyorsanız kabuk belgelerinize bakın.
+<br><br>
+Örneğin, kabuğunuz olarak bash kullanıyorsanız, <strong>.bashrc</strong> dosyanızın sonuna aşağıdaki satırı eklersiniz.
+<strong>PATH'i dışa aktar=/yol/to/java:$PATH'</strong>
+<br><br>
+
+<hr>
+<h4>Popüler Java Editörleri</h4>
+Java programları yazmak için bir metin düzenleyiciye ihtiyacınız vardır. Piyasada daha da karmaşık IDE'ler mevcut. En popüler olanları aşağıda kısaca açıklanmıştır
+<br><br>
+<strong>Not Defteri</strong> – Windows makinesinde Not Defteri (bu eğitim için önerilir) veya WordPad gibi herhangi bir basit metin düzenleyiciyi kullanabilirsiniz. Notepad++ aynı zamanda gelişmiş olanaklara sahip ücretsiz bir metin düzenleyicisidir.
+<br><br>
+<strong>Netbeans</strong> – www.netbeans.org/index.html adresinden indirilebilen, açık kaynaklı ve ücretsiz bir Java IDE'sidir.
+<br><br>
+<strong>Eclipse</strong> - Aynı zamanda Eclipse açık kaynak topluluğu tarafından geliştirilen bir Java IDE'sidir ve www.eclipse.org adresinden indirilebilir.
+<br><br>
+IDE veya Entegre Geliştirme Ortamı, kaynak kodu düzenleyicisi, derleme araçları ve hata ayıklayıcılar vb. gibi programlamaya yardımcı olacak tüm ortak araçları ve olanakları sağlar.
+<br><br>
+
+<hr>
+<h4>Sırada ne var?</h4>
+Bir sonraki bölümde size ilk Java programınızı nasıl yazıp çalıştıracağınızı ve Java'da uygulama geliştirmek için gereken bazı önemli temel sözdizimlerini öğreteceğim.
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>

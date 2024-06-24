@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sadiposeidon.github.io/css/main.css">
+  <script src="https://sadiposeidon.github.io/js/main.js"></script>
+
+  <title></title>
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="https://sadiposeidon.github.io/menu_mobile.html"></div> 
+
+<div class="container m-2">
+<div class="row">
+
+<div class="col-md-3 d-none d-md-block">
+    <div w3-include-html="https://sadiposeidon.github.io/menu_desktop.html"></div> 
+</div>
+<div class="col-md-9 col-12">
+
+<div class="background-text" id="background-text"></div>
+
+<h1>Java - JDK'ya karşı JRE'ye karşı JVM</h1>
+JDK, JRE ve JVM'nin üçü de birbirine bağımlıdır. JDK, öncelikle Geliştiricilerin Java tabanlı uygulamalar geliştirmesine yönelik olan Java Geliştirme Kitidir. JRE, Java programının çalıştığı Java Çalışma Zamanı Ortamıdır. JDK, JRE'yi ayrılmaz bir parçası olarak taşır. JRE ayrı ayrı kurulabileceği gibi herhangi bir geliştirme yapılmayacak, sadece Java tabanlı uygulamayı çalıştırmamız gereken veya Java programı çalıştırılacak sistemlere de kurulabilir. JVM bir spesifikasyondur ve spesifikasyonlara uyduğu sürece farklı uygulamalara sahip olabilir. Teknik özellikler docs.oracle.com bağlantısında bulunabilir. JRE, JVM'nin bir uygulamasıdır.
+<br><br>
+
+<hr>
+<h2>JDK</h2>
+JDK, bir Java Programını derlemek, hata ayıklamak ve yürütmek için gereken tüm araçları, yürütülebilir dosyaları ve ikili dosyaları içeren Java Geliştirme Kitinin (Java Development Kit) kısaltmasıdır . JDK platforma bağlıdır, yani Windows, Mac ve Unix sistemleri için ayrı yükleyiciler vardır. JDK, hem JVM'yi hem de JRE'yi içerir ve kodun yürütülmesinden tamamen sorumludur. Java'nın bir sürümünü temsil eden JDK sürümüdür.
+<br><br>
+
+<hr>
+<h2>JRE</h2>
+JRE, JVM'nin uygulanması olan bir Java Çalışma Zamanı Ortamıdır (Java Runtime Environment) yani JVM'de tanımlanan özellikler uygulanır ve kodun yürütülmesi için karşılık gelen bir ortam yaratır. JRE, fiziksel olarak var olan JVM gibi programı yürütmek için temel olarak Java ikili dosyalarını ve diğer sınıfları içerir. JRE, Java ikili dosyalarının yanı sıra çeşitli dağıtım teknolojilerinden, yürütülen kodla etkileşimde bulunmak için kullanıcı arayüzlerinden, farklı işlevler için bazı temel kitaplıklardan ve dil ve kullanım tabanlı kitaplıklardan oluşur .
+<br><br>
+
+<hr>
+<h2>JVM</h2>
+JVM, Java bayt kodunun çalıştırılabileceği bir çalışma zamanı ortamı sağlayan bir spesifikasyon olan Java Sanal Makinesi (Java Virtual Machine) kısaltmasıdır yani soyut bir şeydir ve uygulanması algoritma seçiminden bağımsızdır ve Sun ve diğer şirketler tarafından sağlanmıştır. Bayt kodunu makineye özel koda dönüştürmekten sorumlu olan JVM'dir. Ayrıca başka dillerde yazılmış ve Java bayt koduna derlenmiş programları da çalıştırabilir. JVM belirtilen görevleri yerine getirir: Kodu yükler, Kodu doğrular, Kodu yürütür ve Çalışma zamanı ortamı sağlar.
+<br><br>
+
+
+<hr>
+<h2>JDK, JRE ve JVM arasındaki fark</h2>
+JDK, JRE ve JVM arasındaki önemli farklar aşağıdadır.
+<br><br>
+
+<hr>
+<strong>1. Tanım (Definition) (JDK): </strong>JDK (Java Development Kit), Java'da uygulamalar geliştirmeye yönelik bir yazılım geliştirme kitidir. JRE'ye ek olarak JDK ayrıca çok sayıda geliştirme aracı (derleyiciler, JavaDoc, Java Hata Ayıklayıcı vb.) içerir.
+<br><br>
+<strong>1. Tanım (Definition) (JRE): </strong>JRE (Java Runtime Environment), JVM'nin uygulanmasıdır ve Java programlamayla yazılmış uygulamaları çalıştırmak için Java sınıfı kitaplıklarının yanı sıra Java Sanal Makinesi (JVM) ve diğer bileşenleri sağlayan bir yazılım paketi olarak tanımlanır.
+<br><br>
+<strong>1. Tanım (Definition) (JVM): </strong>JVM (Java Sanal Makinesi), platforma bağımlı olan ve spesifikasyon olarak üç kavrama sahip soyut bir makinedir; JVM uygulamasının gerekliliklerini açıklayan bir belge, uygulama, JVM gereksinimlerini karşılayan bir bilgisayar programı ve örnek olarak Java'yı çalıştıran bir uygulama bayt kodu, Java bayt kodunu yürütmek için bir çalışma zamanı ortamı sağlar.
+<br><br>
+
+<hr>
+<strong>2. Birinci sınıf işlevsellik (Prime functionality) (JDK): </strong>JDK öncelikle kod yürütme için kullanılır ve temel geliştirme işlevlerine sahiptir.
+<br><br>
+<strong>2. Birinci sınıf işlevsellik (Prime functionality) (JRE): </strong>Öte yandan JRE, esas olarak kod yürütme ortamının oluşturulmasından sorumludur.
+<br><br>
+<strong>2. Birinci sınıf işlevsellik (Prime functionality) (JVM): </strong>JVM ise tüm uygulamaları belirler ve bu uygulamaların JRE'ye sağlanmasından sorumludur.
+<br><br>
+
+<hr>
+<strong>3. Platform Bağımsızlığı (Platform Independence) (JDK): </strong>JDK platforma bağlıdır, yani farklı platformlar için farklı JDK gerekir.
+<br><br>
+<strong>3. Platform Bağımsızlığı (Platform Independence) (JRE): </strong>JDK gibi JRE de platforma bağlıdır.
+<br><br>
+<strong>3. Platform Bağımsızlığı (Platform Independence) (JVM): </strong>JVM platformdan bağımsızdır.
+<br><br>
+
+<hr>
+<strong>4. Aletler (Tools) (JDK): </strong>JDK ana geliştirmeden sorumlu olduğundan, Java uygulamasını geliştirmek, hata ayıklamak ve izlemek için araçlar içerir.
+<br><br>
+<strong>4. Aletler (Tools) (JRE): </strong>Öte yandan JRE, derleyici, hata ayıklayıcı vb. araçları içermez. Bunun yerine, JVM'nin programı çalıştırmak için ihtiyaç duyduğu sınıf kitaplıklarını ve diğer destekleyici dosyaları içerir.
+<br><br>
+<strong>4. Aletler (Tools) (JVM): </strong>JVM, yazılım geliştirme araçlarını içermez.
+<br><br>
+
+<hr>
+<strong>5. Uygulama (Implementation) (JDK): </strong>JDK = Java Çalışma Zamanı Ortamı (JRE) + Geliştirme araçları
+<br><br>
+<strong>5. Uygulama (Implementation) (JRE): </strong>JRE = Java Sanal Makinesi (JVM) + Uygulamayı çalıştırmak için Kitaplıklar
+<br><br>
+<strong>5. Uygulama (Implementation) (JVM): </strong>JVM = Java bayt kodunu yürütmek için yalnızca Çalışma Zamanı ortamı.
+
+<br><br>
+<button class="scroll-to-top" onclick="scrollToTop()">^</button>
+
+</div>
+</div>
+</div>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sadiposeidon.github.io/js/bootstrap.min.js"></script>
+  </body>
+</html>
