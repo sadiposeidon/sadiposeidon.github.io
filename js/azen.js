@@ -30,7 +30,7 @@ function displayRandomWord() {
 
     document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
     setTimeout(() => {
-        document.getElementById('word').textContent = 'EN: . . .' + randomKey;
+        document.getElementById('word').textContent = 'EN: ' + randomKey;
         setTimeout(displayRandomWord, interval1);
     }, interval2);
 
