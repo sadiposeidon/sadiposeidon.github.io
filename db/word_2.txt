@@ -24,7 +24,6 @@ water => su
 xylophone => Ksilofon (musiqi aləti)
 yellow => sarı
 zoo => zoopark, heyvanat baxçası
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 one => bir
 two => iki
 three => üç
@@ -53,7 +52,6 @@ seventy => yetmiş
 eighty => səksən
 ninety => doğsan
 hundred => yüz
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 i => mən
 you => sən
 he => o (k. c)
@@ -62,7 +60,6 @@ it => o (o. c)
 we => biz
 you => siz
 they => onlar
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 me => mənə, məni
 you => sənə, səni
 him => ona, onu (k. c)
@@ -71,7 +68,6 @@ it => ona, onu (o. c)
 us => bizə, bizi
 you => sizə, sizi
 them => onlara, onları
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 my => mənim
 your => sənin
 his => onun (k. c)
@@ -80,7 +76,6 @@ its => onun (o. c)
 our => bizim
 your => sizin
 their => onların
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 mine => mənimki
 yours => səninki
 his => onunku (k. c)
@@ -89,7 +84,6 @@ its => onunku (o. c)
 ours => bizimki
 yous => sizinki
 theirs => onlarınkı
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 myself => özüm [tək]
 yourself => özün [tək]
 himself => özü (k. c) [tək]
@@ -98,28 +92,23 @@ itself => özü (o. c) [tək]
 ourselves => özümüz [cəm]
 yourselves => özünüz [cəm]
 themselves => özləri [cəm]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 oeach other => bir-birini
 one another => bir-birimizə
 each other's => bir-birinin
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 this => bu (işarə əvəzliyi - yaxın və tək olan cisim və ya insanı işarə etmək üçün istifadə olunur)
 these => bunlar (işarə əvəzliyi - uzaqda və tək olan cisim və ya insanı işarə etmək üçün istifadə olunur)
 that => o (işarə əvəzliyi - yaxın və cəm olan cisim və ya insanları işarə etmək üçün istifadə olunur)
 those => onlar (işarə əvəzliyi - uzaqda və cəm olan cisim və ya insanları işarə etmək üçün istifadə olunur)
 such => elə, belə
 same => həmin, eyni
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 who => kim
 what => nə
 wich => hansı
 whom => kiminlə
 whose => kimin
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 neither => heç biri
 none => heç biri
 nobody => heç kim
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 some => bir neçə, bir az, bəzi, bir qədər, təxminən, hər hansı, bəziləri
 somebody => kimsə, bir kəs
 someone => kimsə, bir kəs
@@ -128,12 +117,10 @@ any => bir neçə, bir az, hər hansı, heç, heç bir, istənilən
 anything => nə isə, hər bir (nə varsa)
 anybody => kimsə, hər kəs (istənilən adam)
 anyone => heç kim
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 to be => olmaq
 i want to be a doctor. => mən həkim olmaq istəyirəm.
 to be or not to be. => Olmaq, ya olmamaq.
 be yourself. => özün ol.
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 box => qutu
 tree => ağac
 sex => cins (kişi, qadın)
@@ -149,14 +136,12 @@ morn => sabah
 afternoon => günorta
 after => sonra
 night => gecə
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 good morning => sabahın xeyir
 good afternoon => günortan xeyir
 good evening => axşamın xeyir
 good night => gecəniz xeyirə
 good bye => sağol
 see you => görüşərik
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 a => bir (qeyrimüəyyən artikl)
 advice => məsləhət
 after => sonra
@@ -363,7 +348,6 @@ wounded => yaralı
 year => il
 you => sən, siz
 young => gənc
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 how old are you ? => sənin necə yaşın var ?
 where are you from ? => sən hardansan ?
 where are you now ? => indi haradasan ?
@@ -383,7 +367,6 @@ what is up ? => necə gedir
 long time no see => uzun vaxtdır görmürəm
 what does it mean ? => bunun mənası nədi ?
 how to answer ? => necə cavab verərlər ?
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 one hundred => yüz
 one hundred one => yüz bir
 one hundred two => yüz iki
