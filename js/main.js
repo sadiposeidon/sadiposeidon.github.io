@@ -1,24 +1,24 @@
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
+// document.addEventListener('contextmenu', function(e) {
+//     e.preventDefault();
+// });
 
-document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'p')) {
-        e.preventDefault();
-    } else if (e.key === 'F12') {
-        e.preventDefault();
-    }
-});
+// document.addEventListener('keydown', function(e) {
+//     if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'p')) {
+//         e.preventDefault();
+//     } else if (e.key === 'F12') {
+//         e.preventDefault();
+//     }
+// });
 
-document.addEventListener('mousedown', function(e) {
-    if (e.detail > 1) {
-        e.preventDefault();
-    }
-});
+// document.addEventListener('mousedown', function(e) {
+//     if (e.detail > 1) {
+//         e.preventDefault();
+//     }
+// });
 
-document.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-});
+// document.addEventListener('selectstart', function(e) {
+//     e.preventDefault();
+// });
 
 
 function includeHTML() {
