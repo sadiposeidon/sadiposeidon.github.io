@@ -1,10 +1,10 @@
-body {
+/*body {
     margin: 10;
     padding: 10;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-/*    user-select: none;*/
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -21,7 +21,7 @@ body {
     transform: translate(-50%, -50%) rotate(60deg);
     pointer-events: none;
     user-select: none;
-}
+}*/
 
 .list-group-item {
     border-color: #6c757d;
