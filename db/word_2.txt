@@ -163,6 +163,6 @@ as => kimi
 ask => soruşmaq
 at => -da, -də
 august => avqust
-aunt => bibi/xala
+aunt => bibi, xala
 autumn => payız
 away => uzaqda
