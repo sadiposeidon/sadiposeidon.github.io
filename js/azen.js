@@ -1,5 +1,5 @@
 let wordMap = {};
-let interval1 = 5000;
+let interval1 = 3000;
 let interval2 = 5000;
 
 async function fetchWordMap() {
