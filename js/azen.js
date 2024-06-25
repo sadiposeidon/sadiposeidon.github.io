@@ -1,6 +1,6 @@
 let wordMap = {};
-let interval1 = 3000;
-let interval2 = 5000;
+let interval1 = 2000;
+let interval2 = 4000;
 
 async function fetchWordMap() {
     const fileName = 'https://sadiposeidon.github.io/db/word_2.txt';
