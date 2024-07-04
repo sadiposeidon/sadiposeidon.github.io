@@ -28,9 +28,9 @@ function displayRandomWord() {
         return;
     }
 
-    document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
+    document.getElementById('word').textContent = 'EN: ' + randomKey;
     setTimeout(() => {
-        document.getElementById('word').textContent = 'EN: ' + randomKey;
+        document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
         setTimeout(displayRandomWord, interval1);
     }, interval2);
 
