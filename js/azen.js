@@ -1,6 +1,7 @@
 let wordMap = {};
 let interval1 = 3000;
 let interval2 = 6000;
+let displayedWords = {};
 
 async function fetchWordMap() {
     const fileName = 'https://sadiposeidon.github.io/db/word_2.txt';
@@ -21,14 +22,15 @@ async function fetchWordMap() {
 
 function displayRandomWord() {
     const keys = Object.keys(wordMap);
-    const randomKey = keys[Math.floor(Math.random() * keys.length)];
-
-    if (randomKey.startsWith('+')) {
-        displayRandomWord();
+    const availableKeys = keys.filter(key => !(key in displayedWords) || displayedWords[key] < 3);
+    if (availableKeys.length === 0) {
+        console.log("All words have been displayed at least three times.");
         return;
     }
+    const randomKey = availableKeys[Math.floor(Math.random() * availableKeys.length)];
 
     document.getElementById('word').textContent = 'EN: ' + randomKey;
+    displayedWords[randomKey] = (displayedWords[randomKey] || 0) + 1;
     setTimeout(() => {
         document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
         setTimeout(displayRandomWord, interval1);
@@ -48,5 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
 function updateInterval(interval1, interval2) {
     interval1 = interval1 * 1000;
     interval2 = interval2 * 1000;
-    console.log(`Display interval updated to ${interval1} seconds and ${interval2} seconds.`);
+    console.log(`Display interval updated to ${interval1} milliseconds and ${interval2} milliseconds.`);
 }
