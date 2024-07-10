@@ -19,26 +19,26 @@ async function fetchWordMap() {
     }
 }
 
-function displayRandomWord1() {
+function displayRandomWord() {
     const keys = Object.keys(wordMap);
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
 
     if (randomKey.startsWith('+')) {
-        displayRandomWord1();
+        displayRandomWord();
         return;
     }
 
-    document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
+    document.getElementById('word').textContent = 'EN: ' + randomKey;
     setTimeout(() => {
-        document.getElementById('word').textContent = 'EN: ' + randomKey;
-        setTimeout(displayRandomWord1, interval1);
+        document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
+        setTimeout(displayRandomWord, interval1);
     }, interval2);
-    document.getElementById('word').textContent = 'EN:';
+    document.getElementById('meaning').textContent = 'AZ:';
 }
 
 async function initialize() {
     await fetchWordMap();
-    displayRandomWord1();
+    displayRandomWord();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
