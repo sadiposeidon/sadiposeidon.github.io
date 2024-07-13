@@ -1,6 +1,6 @@
 let wordMap = {};
-let interval1 = 1;
-let interval2 = 2000;
+let interval1 = 2000;
+let interval2 = 4000;
 let displayedWords = {};
 
 async function fetchWordMap() {
@@ -29,9 +29,9 @@ function displayRandomWord() {
     }
     const randomKey = availableKeys[Math.floor(Math.random() * availableKeys.length)];
 
-    document.getElementById('word').textContent = 'EN: ' + randomKey;
-    displayedWords[randomKey] = (displayedWords[randomKey] || 0) + 1;
     setTimeout(() => {
+        document.getElementById('word').textContent = 'EN: ' + randomKey;
+        displayedWords[randomKey] = (displayedWords[randomKey] || 0) + 1;
         document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
         setTimeout(displayRandomWord, interval1);
     }, interval2);
