@@ -35,7 +35,7 @@ function displayRandomWord() {
         document.getElementById('meaning').textContent = 'AZ: ' + wordMap[randomKey];
         setTimeout(displayRandomWord, interval1);
     }, interval2);
-    document.getElementById('meaning').textContent = 'AZ:';
+    //document.getElementById('meaning').textContent = 'AZ:';
 }
 
 async function initialize() {
