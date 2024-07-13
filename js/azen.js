@@ -1,6 +1,6 @@
 let wordMap = {};
 let interval1 = 2000;
-let interval2 = 4000;
+let interval2 = 6000;
 let displayedWords = {};
 
 async function fetchWordMap() {
